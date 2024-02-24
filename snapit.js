@@ -58,6 +58,18 @@ class Snapit {
         }
     }
 
+    // delete file
+    deleteFile(path) {
+        return new Promise((resolve, reject) => {
+            fs.unlink(path, (err) => {
+                if (err) {
+                    reject(err);
+                }
+                resolve('File deleted successfully');
+            });
+        })
+    }
+
 
     /**
      * @param {string} url - The url of the website to generate pdf
@@ -85,7 +97,7 @@ class Snapit {
                 await this.confirmDir();
     
                 path = 'uploads/' + this.generateUniqueName() + '.pdf';
-    
+
                 // this code snippet generate string name from current date and time
     
                 await page.pdf({
