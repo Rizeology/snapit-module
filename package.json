@@ -1,0 +1,24 @@
+{
+  "name": "rizeology-snapit",
+  "version": "1.0.2",
+  "description": "",
+  "main": "snapit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.5",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "path": "^0.12.7",
+    "puppeteer": "^22.2.0",
+    "request": "^2.88.2",
+    "rizeology-snapit": "^1.0.0",
+    "selenium-webdriver": "^4.18.1",
+    "url": "^0.11.3"
+  }
+}
